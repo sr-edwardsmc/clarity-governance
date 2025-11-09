@@ -5,7 +5,7 @@ import { ConnectButton } from "@rainbow-me/rainbowkit";
 import Link from "next/link";
 import { Vote, Users, TrendingUp, Shield, Zap, ArrowRight } from "lucide-react";
 
-import { useVotingPower } from "@/hooks/useVotinPower";
+import { useVotingPower } from "@/hooks/useVotingPower";
 import { StatsCard, Card, Button } from "@/components/ui";
 
 export default function Home() {

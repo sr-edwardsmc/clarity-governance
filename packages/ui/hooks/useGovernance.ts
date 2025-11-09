@@ -83,3 +83,43 @@ export function useCastVote() {
   };
   return { castVote, isPending, isConfirming };
 }
+
+export function useQueueProposal() {
+  const { writeContract, data: hash, isPending } = useWriteContract();
+  const { isLoading: isConfirming } = useWaitForTransactionReceipt({ hash });
+
+  const queueProposal = (
+    targets: Address[],
+    values: bigint[],
+    calldatas: `0x${string}`[],
+    descriptionHash: `0x${string}`
+  ) => {
+    writeContract({
+      ...contracts.governor,
+      functionName: "queue",
+      args: [targets, values, calldatas, descriptionHash],
+    });
+  };
+
+  return { queueProposal, isPending, isConfirming };
+}
+
+export function useExecuteProposal() {
+  const { writeContract, data: hash, isPending } = useWriteContract();
+  const { isLoading: isConfirming } = useWaitForTransactionReceipt({ hash });
+
+  const executeProposal = (
+    targets: Address[],
+    values: bigint[],
+    calldatas: `0x${string}`[],
+    descriptionHash: `0x${string}`
+  ) => {
+    writeContract({
+      ...contracts.governor,
+      functionName: "execute",
+      args: [targets, values, calldatas, descriptionHash],
+    });
+  };
+
+  return { executeProposal, isPending, isConfirming };
+}

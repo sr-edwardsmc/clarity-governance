@@ -4,7 +4,7 @@ import { useAccount } from "wagmi";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import { Vote, TrendingUp, Users, Info } from "lucide-react";
 import { DelegateForm } from "@/components/DelegateForm";
-import { useVotingPower } from "@/hooks/useVotinPower";
+import { useVotingPower } from "@/hooks/useVotingPower";
 import { StatsCard, Card } from "@/components/ui";
 
 export default function DelegatePage() {
@@ -72,7 +72,8 @@ export default function DelegatePage() {
                         Activate Voting Power
                       </h4>
                       <p className="text-sm text-foreground-secondary">
-                        Delegate to yourself to activate your voting power and participate directly
+                        Delegate to yourself to activate your voting power and
+                        participate directly
                       </p>
                     </div>
                   </div>
@@ -86,7 +87,8 @@ export default function DelegatePage() {
                         Choose a Representative
                       </h4>
                       <p className="text-sm text-foreground-secondary">
-                        Or delegate to a trusted community member to vote on your behalf
+                        Or delegate to a trusted community member to vote on
+                        your behalf
                       </p>
                     </div>
                   </div>
@@ -98,9 +100,12 @@ export default function DelegatePage() {
                       3
                     </div>
                     <div>
-                      <h4 className="font-semibold text-foreground mb-1">Maintain Control</h4>
+                      <h4 className="font-semibold text-foreground mb-1">
+                        Maintain Control
+                      </h4>
                       <p className="text-sm text-foreground-secondary">
-                        You can change your delegation or vote directly at any time
+                        You can change your delegation or vote directly at any
+                        time
                       </p>
                     </div>
                   </div>
@@ -114,7 +119,8 @@ export default function DelegatePage() {
                         Participate in Governance
                       </h4>
                       <p className="text-sm text-foreground-secondary">
-                        Help shape the future of the protocol through active participation
+                        Help shape the future of the protocol through active
+                        participation
                       </p>
                     </div>
                   </div>
