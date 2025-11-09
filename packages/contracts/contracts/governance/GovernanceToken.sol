@@ -8,7 +8,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 
 /**
  * @title GovernanceToken
- * @author Edward Monsalve
+ * @author Your Name
  * @notice ERC20 token with voting and delegation capabilities
  * @dev Extends ERC20Votes for on-chain governance
  * 

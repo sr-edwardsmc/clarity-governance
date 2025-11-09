@@ -10,7 +10,7 @@ import "@openzeppelin/contracts/governance/extensions/GovernorTimelockControl.so
 
 /**
  * @title GovernorContract
- * @author Edward Monsalve
+ * @author Your Name
  * @notice Main governance contract for proposal creation, voting, and execution
  * @dev Implements OpenZeppelin's Governor with multiple extensions
  * 
