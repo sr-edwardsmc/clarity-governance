@@ -7,12 +7,12 @@ import { Plus, AlertCircle, Vote } from "lucide-react";
 import { useVotingPower } from "@/hooks/useVotingPower";
 import { ProposalForm } from "@/components/ProposalForm";
 import { Card } from "@/components/ui";
+import { PROPOSAL_THRESHOLD } from "@/lib/constants";
 
 export default function CreateProposalPage() {
   const { address, isConnected } = useAccount();
   const { votingPower } = useVotingPower(address);
 
-  const PROPOSAL_THRESHOLD = BigInt(1000) * BigInt(10) ** BigInt(18); // 1000 tokens
   const hasEnoughTokens =
     votingPower &&
     typeof votingPower === "bigint" &&

@@ -50,7 +50,11 @@ export default function ProposalsPage() {
 
             {isConnected && (
               <Link href="/proposals/create">
-                <Button variant="primary" size="lg" className="flex items-center gap-2">
+                <Button
+                  variant="primary"
+                  size="lg"
+                  className="flex items-center gap-2"
+                >
                   <Plus className="w-5 h-5" />
                   Create Proposal
                 </Button>
@@ -105,12 +109,13 @@ export default function ProposalsPage() {
         ) : (
           <div className="text-center py-20">
             <div className="max-w-md mx-auto">
-              <div className="inline-flex p-6 rounded-full bg-gradient-to-br from-primary/20 to-secondary/20 border border-primary/30 mb-6">
+              <div className="inline-flex p-6 rounded-full bg-linear-to-br from-primary/20 to-secondary/20 border border-primary/30 mb-6">
                 <Plus className="w-12 h-12 text-primary" />
               </div>
               <h2 className="text-3xl font-bold mb-4">Connect Your Wallet</h2>
               <p className="text-foreground-secondary text-lg mb-8">
-                Connect your wallet to view and participate in governance proposals
+                Connect your wallet to view and participate in governance
+                proposals
               </p>
               <ConnectButton />
             </div>

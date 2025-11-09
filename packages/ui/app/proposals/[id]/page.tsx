@@ -18,17 +18,7 @@ import { VoteButton } from "@/components/VoteButton";
 import { useQueueProposal, useExecuteProposal } from "@/hooks/useGovernance";
 import { toast } from "react-hot-toast";
 import { Card, Button } from "@/components/ui";
-
-const STATE_LABELS = [
-  "Pending",
-  "Active",
-  "Canceled",
-  "Defeated",
-  "Succeeded",
-  "Queued",
-  "Expired",
-  "Executed",
-];
+import { PROPOSAL_STATE_LABELS } from "@/lib/constants";
 
 export default function ProposalDetailPage() {
   const params = useParams();
@@ -64,8 +54,6 @@ export default function ProposalDetailPage() {
   const { executeProposal, isPending: isExecuting } = useExecuteProposal();
 
   const handleQueue = () => {
-    // You'll need to pass the actual proposal data
-    // For now, simplified:
     toast.error(
       "Queue functionality needs proposal data - implement based on your storage"
     );
@@ -78,7 +66,7 @@ export default function ProposalDetailPage() {
   };
 
   const stateLabel =
-    state !== undefined ? STATE_LABELS[Number(state)] : "Loading...";
+    state !== undefined ? PROPOSAL_STATE_LABELS[Number(state)] : "Loading...";
 
   const stateConfig: Record<
     string,
