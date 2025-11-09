@@ -48,7 +48,7 @@ export default function DelegatePage() {
             {/* How it Works */}
             <Card>
               <div className="flex items-start gap-3 mb-4">
-                <div className="p-2 rounded-lg bg-gradient-to-br from-accent/20 to-primary/20 border border-accent/30">
+                <div className="p-2 rounded-lg bg-linear-to-br from-accent/20 to-primary/20 border border-accent/30">
                   <Info className="w-5 h-5 text-accent" />
                 </div>
                 <div>
@@ -64,7 +64,7 @@ export default function DelegatePage() {
               <div className="grid md:grid-cols-2 gap-6 mt-6">
                 <div className="space-y-3">
                   <div className="flex gap-3">
-                    <div className="flex-shrink-0 w-6 h-6 rounded-full bg-primary/20 border border-primary/30 flex items-center justify-center text-primary text-sm font-bold">
+                    <div className="shrink-0 w-6 h-6 rounded-full bg-primary/20 border border-primary/30 flex items-center justify-center text-primary text-sm font-bold">
                       1
                     </div>
                     <div>
@@ -79,7 +79,7 @@ export default function DelegatePage() {
                   </div>
 
                   <div className="flex gap-3">
-                    <div className="flex-shrink-0 w-6 h-6 rounded-full bg-primary/20 border border-primary/30 flex items-center justify-center text-primary text-sm font-bold">
+                    <div className="shrink-0 w-6 h-6 rounded-full bg-primary/20 border border-primary/30 flex items-center justify-center text-primary text-sm font-bold">
                       2
                     </div>
                     <div>
@@ -96,7 +96,7 @@ export default function DelegatePage() {
 
                 <div className="space-y-3">
                   <div className="flex gap-3">
-                    <div className="flex-shrink-0 w-6 h-6 rounded-full bg-primary/20 border border-primary/30 flex items-center justify-center text-primary text-sm font-bold">
+                    <div className="shrink-0 w-6 h-6 rounded-full bg-primary/20 border border-primary/30 flex items-center justify-center text-primary text-sm font-bold">
                       3
                     </div>
                     <div>
@@ -111,7 +111,7 @@ export default function DelegatePage() {
                   </div>
 
                   <div className="flex gap-3">
-                    <div className="flex-shrink-0 w-6 h-6 rounded-full bg-primary/20 border border-primary/30 flex items-center justify-center text-primary text-sm font-bold">
+                    <div className="shrink-0 w-6 h-6 rounded-full bg-primary/20 border border-primary/30 flex items-center justify-center text-primary text-sm font-bold">
                       4
                     </div>
                     <div>
@@ -134,7 +134,7 @@ export default function DelegatePage() {
         ) : (
           <div className="text-center py-20">
             <div className="max-w-md mx-auto">
-              <div className="inline-flex p-6 rounded-full bg-gradient-to-br from-primary/20 to-secondary/20 border border-primary/30 mb-6">
+              <div className="inline-flex p-6 rounded-full bg-linear-to-br from-primary/20 to-secondary/20 border border-primary/30 mb-6">
                 <Users className="w-12 h-12 text-primary" />
               </div>
               <h2 className="text-3xl font-bold mb-4">Connect Your Wallet</h2>

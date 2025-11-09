@@ -16,6 +16,12 @@ async function main() {
   const token = await GovernanceToken.deploy(deployer.address);
   await token.waitForDeployment();
   const tokenAddress = await token.getAddress();
+  // Mint tokens
+  const amount = ethers.parseEther("20000");
+  await token.mint(deployer.address, amount);
+
+  // Delegate voting power to yourself
+  await token.delegate(deployer.address);
   console.log("✓ Governance Token deployed to:", tokenAddress);
 
   // Deploy Timelock

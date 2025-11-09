@@ -34,13 +34,16 @@ export default function DelegateForm() {
   return (
     <Card glow>
       <div className="flex items-start gap-3 mb-6">
-        <div className="p-2 rounded-lg bg-gradient-to-br from-primary/20 to-secondary/20 border border-primary/30">
+        <div className="p-2 rounded-lg bg-linear-to-br from-primary/20 to-secondary/20 border border-primary/30">
           <UserCheck className="w-6 h-6 text-primary" />
         </div>
         <div className="flex-1">
-          <h2 className="text-2xl font-bold mb-1 text-foreground">Delegate Your Votes</h2>
+          <h2 className="text-2xl font-bold mb-1 text-foreground">
+            Delegate Your Votes
+          </h2>
           <p className="text-foreground-secondary text-sm">
-            Transfer your voting power to another address or delegate to yourself
+            Transfer your voting power to another address or delegate to
+            yourself
           </p>
         </div>
       </div>
@@ -48,13 +51,13 @@ export default function DelegateForm() {
       {/* Info Banner */}
       <div className="mb-6 p-4 rounded-lg bg-secondary/10 border border-secondary/30">
         <div className="flex gap-3">
-          <Info className="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" />
+          <Info className="w-5 h-5 text-secondary shrink-0 mt-0.5" />
           <div className="text-sm text-foreground-secondary">
             <p className="font-medium text-foreground mb-1">About Delegation</p>
             <p>
-              Delegating allows you to assign your voting power to another address. You can
-              delegate to yourself to activate your voting power, or to a trusted representative
-              to vote on your behalf.
+              Delegating allows you to assign your voting power to another
+              address. You can delegate to yourself to activate your voting
+              power, or to a trusted representative to vote on your behalf.
             </p>
           </div>
         </div>
@@ -108,7 +111,9 @@ export default function DelegateForm() {
         <div className="flex items-center justify-between text-sm">
           <span className="text-foreground-secondary">Your Address:</span>
           <code className="text-foreground font-mono text-xs bg-background-tertiary px-2 py-1 rounded">
-            {address ? `${address.slice(0, 6)}...${address.slice(-4)}` : "Not connected"}
+            {address
+              ? `${address.slice(0, 6)}...${address.slice(-4)}`
+              : "Not connected"}
           </code>
         </div>
       </div>

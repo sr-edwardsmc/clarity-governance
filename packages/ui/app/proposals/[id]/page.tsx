@@ -77,7 +77,8 @@ export default function ProposalDetailPage() {
     );
   };
 
-  const stateLabel = state !== undefined ? STATE_LABELS[Number(state)] : "Loading...";
+  const stateLabel =
+    state !== undefined ? STATE_LABELS[Number(state)] : "Loading...";
 
   const stateConfig: Record<
     string,
@@ -139,14 +140,15 @@ export default function ProposalDetailPage() {
         {/* Header */}
         <div className="mb-8">
           <h1 className="text-4xl sm:text-5xl font-bold mb-2">
-            Proposal <span className="gradient-text">#{proposalId.toString()}</span>
+            Proposal{" "}
+            <span className="gradient-text">#{proposalId.toString()}</span>
           </h1>
         </div>
 
         {!isConnected ? (
           <div className="text-center py-20">
             <div className="max-w-md mx-auto">
-              <div className="inline-flex p-6 rounded-full bg-gradient-to-br from-primary/20 to-secondary/20 border border-primary/30 mb-6">
+              <div className="inline-flex p-6 rounded-full bg-linear-to-br from-primary/20 to-secondary/20 border border-primary/30 mb-6">
                 <TrendingUp className="w-12 h-12 text-primary" />
               </div>
               <h2 className="text-3xl font-bold mb-4">Connect Your Wallet</h2>
@@ -179,13 +181,17 @@ export default function ProposalDetailPage() {
 
               <div className="grid grid-cols-2 gap-4 mt-6 pt-4 border-t border-border/50">
                 <div>
-                  <p className="text-foreground-secondary text-sm mb-1">Snapshot Block</p>
+                  <p className="text-foreground-secondary text-sm mb-1">
+                    Snapshot Block
+                  </p>
                   <p className="font-bold text-foreground">
                     {snapshot?.toString() || "Loading..."}
                   </p>
                 </div>
                 <div>
-                  <p className="text-foreground-secondary text-sm mb-1">Deadline Block</p>
+                  <p className="text-foreground-secondary text-sm mb-1">
+                    Deadline Block
+                  </p>
                   <p className="font-bold text-foreground">
                     {deadline?.toString() || "Loading..."}
                   </p>
@@ -211,7 +217,7 @@ export default function ProposalDetailPage() {
                   </div>
                   <div className="w-full bg-background-tertiary rounded-full h-3 overflow-hidden border border-border">
                     <div
-                      className="bg-gradient-to-r from-success to-success/80 h-3 rounded-full transition-all duration-500"
+                      className="bg-linear-to-r from-success to-success/80 h-3 rounded-full transition-all duration-500"
                       style={{ width: "60%" }}
                     />
                   </div>
@@ -227,7 +233,7 @@ export default function ProposalDetailPage() {
                   </div>
                   <div className="w-full bg-background-tertiary rounded-full h-3 overflow-hidden border border-border">
                     <div
-                      className="bg-gradient-to-r from-error to-error/80 h-3 rounded-full transition-all duration-500"
+                      className="bg-linear-to-r from-error to-error/80 h-3 rounded-full transition-all duration-500"
                       style={{ width: "20%" }}
                     />
                   </div>
@@ -243,7 +249,7 @@ export default function ProposalDetailPage() {
                   </div>
                   <div className="w-full bg-background-tertiary rounded-full h-3 overflow-hidden border border-border">
                     <div
-                      className="bg-gradient-to-r from-foreground-secondary to-foreground-secondary/80 h-3 rounded-full transition-all duration-500"
+                      className="bg-linear-to-r from-foreground-secondary to-foreground-secondary/80 h-3 rounded-full transition-all duration-500"
                       style={{ width: "20%" }}
                     />
                   </div>
@@ -253,7 +259,9 @@ export default function ProposalDetailPage() {
 
             {/* Actions */}
             <Card glow>
-              <h3 className="text-xl font-bold mb-4 text-foreground">Actions</h3>
+              <h3 className="text-xl font-bold mb-4 text-foreground">
+                Actions
+              </h3>
 
               {/* Active - Can Vote */}
               {state === 1 && (

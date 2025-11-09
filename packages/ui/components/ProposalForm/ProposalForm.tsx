@@ -207,7 +207,9 @@ export default function ProposalForm() {
                 <input
                   type="text"
                   value={action.target}
-                  onChange={(e) => updateAction(index, "target", e.target.value)}
+                  onChange={(e) =>
+                    updateAction(index, "target", e.target.value)
+                  }
                   className="w-full px-3 py-2 bg-background-tertiary border border-border rounded-lg text-foreground placeholder:text-foreground-secondary focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary font-mono text-sm"
                   placeholder="0x..."
                   required
@@ -287,7 +289,7 @@ export default function ProposalForm() {
       {/* Help Text */}
       <Card className="border-secondary/30">
         <div className="flex items-start gap-3">
-          <div className="p-2 rounded-lg bg-secondary/10 border border-secondary/30 flex-shrink-0">
+          <div className="p-2 rounded-lg bg-secondary/10 border border-secondary/30 shrink-0">
             <Info className="w-5 h-5 text-secondary" />
           </div>
           <div>

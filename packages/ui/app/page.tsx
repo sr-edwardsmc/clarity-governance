@@ -128,7 +128,7 @@ export default function Home() {
 
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="text-center">
-              <div className="inline-flex p-4 rounded-2xl bg-gradient-to-br from-primary/20 to-secondary/20 border border-primary/30 mb-4">
+              <div className="inline-flex p-4 rounded-2xl bg-linear-to-br from-primary/20 to-secondary/20 border border-primary/30 mb-4">
                 <Shield className="w-10 h-10 text-primary" />
               </div>
               <h3 className="text-xl font-bold mb-2">Secure & Audited</h3>
@@ -139,7 +139,7 @@ export default function Home() {
             </Card>
 
             <Card className="text-center">
-              <div className="inline-flex p-4 rounded-2xl bg-gradient-to-br from-secondary/20 to-accent/20 border border-secondary/30 mb-4">
+              <div className="inline-flex p-4 rounded-2xl bg-linear-to-br from-secondary/20 to-accent/20 border border-secondary/30 mb-4">
                 <Zap className="w-10 h-10 text-secondary" />
               </div>
               <h3 className="text-xl font-bold mb-2">Fully On-Chain</h3>
@@ -150,7 +150,7 @@ export default function Home() {
             </Card>
 
             <Card className="text-center">
-              <div className="inline-flex p-4 rounded-2xl bg-gradient-to-br from-accent/20 to-primary/20 border border-accent/30 mb-4">
+              <div className="inline-flex p-4 rounded-2xl bg-linear-to-br from-accent/20 to-primary/20 border border-accent/30 mb-4">
                 <Users className="w-10 h-10 text-accent" />
               </div>
               <h3 className="text-xl font-bold mb-2">Community Driven</h3>

@@ -34,7 +34,7 @@ export default function CreateProposalPage() {
         {!isConnected ? (
           <div className="text-center py-20">
             <div className="max-w-md mx-auto">
-              <div className="inline-flex p-6 rounded-full bg-gradient-to-br from-primary/20 to-secondary/20 border border-primary/30 mb-6">
+              <div className="inline-flex p-6 rounded-full bg-linear-to-br from-primary/20 to-secondary/20 border border-primary/30 mb-6">
                 <Plus className="w-12 h-12 text-primary" />
               </div>
               <h2 className="text-3xl font-bold mb-4">Connect Your Wallet</h2>
