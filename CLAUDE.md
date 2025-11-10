@@ -16,12 +16,14 @@ Clarity Governance is a Web3 governance DApp built on Ethereum that demonstrates
 The project implements a full governance system based on OpenZeppelin's Governor framework:
 
 1. **GovernanceToken** (`contracts/governance/GovernanceToken.sol`)
+
    - ERC20 token with voting capabilities (ERC20Votes)
    - Supports vote delegation and checkpoint tracking
    - EIP-712 permit support for gasless approvals
    - Initial supply: 100 million tokens
 
 2. **Governor** (`contracts/governance/Governor.sol`)
+
    - Main governance contract implementing OpenZeppelin Governor extensions
    - Voting delay: 1 day (7200 blocks)
    - Voting period: 1 week (50400 blocks)
@@ -56,12 +58,14 @@ cd packages/contracts
 ```
 
 **Compilation:**
+
 ```bash
 npx hardhat compile          # Compile contracts with Hardhat
 forge build                  # Compile with Foundry
 ```
 
 **Testing:**
+
 ```bash
 npx hardhat test                                    # Run all tests
 npx hardhat test test/unit/GovernanceToken.test.ts  # Run specific test
@@ -70,37 +74,44 @@ forge test                                           # Run Foundry tests
 ```
 
 **Test Organization:**
+
 - `test/unit/`: Unit tests for individual contracts (Hardhat TypeScript)
 - `test/integration/`: End-to-end workflow tests (Hardhat TypeScript)
 - `test/security/`: Security-focused tests
 
 **Coverage:**
+
 ```bash
 npx hardhat coverage         # Generate coverage report
 ```
 
 **Gas Reporting:**
+
 ```bash
 REPORT_GAS=true npx hardhat test
 ```
 
 **Deployment:**
+
 ```bash
 npx hardhat run scripts/deploy.ts --network hardhat    # Local deployment
 npx hardhat run scripts/deploy.ts --network sepolia    # Testnet deployment
 ```
 
 **Local Node:**
+
 ```bash
 npx hardhat node             # Start local Ethereum node
 ```
 
 **Contract Verification:**
+
 ```bash
 npx hardhat verify --network sepolia <CONTRACT_ADDRESS> <CONSTRUCTOR_ARGS>
 ```
 
 **Other Utilities:**
+
 ```bash
 npx hardhat size-contracts   # Check contract sizes
 npx hardhat clean            # Clear cache and artifacts
@@ -115,6 +126,7 @@ cd packages/ui
 ```
 
 **Development:**
+
 ```bash
 pnpm dev                     # Start dev server (localhost:3000)
 pnpm build                   # Build for production
@@ -122,6 +134,7 @@ pnpm start                   # Start production server
 ```
 
 **Code Quality:**
+
 ```bash
 pnpm lint                    # Run Biome checks
 pnpm format                  # Format code with Biome
@@ -169,6 +182,7 @@ Create `packages/ui/.env.local` for Next.js environment variables.
 ### Network Configuration
 
 Configured networks in `hardhat.config.ts`:
+
 - `hardhat`: Local development (chainId 31337)
 - `sepolia`: Ethereum testnet (chainId 11155111)
 - `mainnet`: Ethereum mainnet (chainId 1)
