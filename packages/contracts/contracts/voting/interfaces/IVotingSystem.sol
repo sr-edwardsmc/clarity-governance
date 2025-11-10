@@ -47,6 +47,7 @@ interface IVotingSystem {
     error AlreadyVoted();
     error InvalidOption();
     error InvalidTimeframe();
+    error NoVotingPower();
 
 
     // Functions
