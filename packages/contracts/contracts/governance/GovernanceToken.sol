@@ -8,7 +8,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 
 /**
  * @title GovernanceToken
- * @author Your Name
+ * @author Edward Monsalve Castrillon
  * @notice ERC20 token with voting and delegation capabilities
  * @dev Extends ERC20Votes for on-chain governance
  * 
@@ -32,8 +32,8 @@ contract GovernanceToken is ERC20, ERC20Permit, ERC20Votes, Ownable {
      * @param initialOwner Address that will receive initial supply
      */
     constructor(address initialOwner)
-        ERC20("Governance Token", "GOV")
-        ERC20Permit("Governance Token")
+        ERC20("Clarity Governance Token", "CLTY")
+        ERC20Permit("Clarity Governance Token")
         Ownable(initialOwner)
     {
         _mint(initialOwner, INITIAL_SUPPLY);
