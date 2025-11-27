@@ -14,7 +14,7 @@ import "./interfaces/IVotingSystem.sol";
  *      Implements time-locked polls with multiple options and weighted voting based on token holdings.
  */
 
-abstract contract VotingSystem is IVotingSystem, Ownable, Pausable, ReentrancyGuard {
+contract VotingSystem is IVotingSystem, Ownable, Pausable, ReentrancyGuard {
     // State variables
     IERC20 public immutable votingToken;
     uint256 public pollCount;
